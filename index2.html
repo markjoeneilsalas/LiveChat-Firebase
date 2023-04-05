@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="stylesheet" href="./Assets/css/style.css">
+    <script src="./Assets/js/user2.js"></script> 
+    <title>Live Chat</title>
+    <style>
+body {
+background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 35%, rgba(0,212,255,1) 100%);
+font-family: 'Roboto', sans-serif;
+    }
+    </style>
+</head>
+<body>
+
+         <div class="container">
+            <h1 class="text-center text-light">Live Chat</h1>
+        </div>
+        <div>
+            <div class="container">
+                <button class="bg-primary rounded button-50"><a href="index.html" class="text-light text-decoration-none font-weight-bold">USER1</a></button><button class="bg-primary rounded button-50"><a href="index2.html" class="text-light text-decoration-none font-weight-bold">USER2</a></button>
+            </div>
+            <div class="container">
+                <div id="chat-display" class="bg-light text-dark" style="height: 50vh;">
+                    <!-- chat messages will be displayed here -->
+                </div>
+                <form id="chat-form" class="chat-display">
+                    <input class="col" type="text" id="name-input" placeholder="Your name" value="USER2" disabled>
+                    <input class="col-8" type="text" id="message-input" placeholder="Type your message">
+                    <button class="bg-primary" type="submit"><img src="./Assets/img/send-check-fill.svg" alt=""></button>   <button id="clear-btn" class="bg-danger"><img src="./Assets/img/trash3-fill.svg" alt=""></button>
+                </form>
+                
+            </div>
+        </div>
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+<script src="Assets/js/user1.js"></script>
+</body>
+</html>
